@@ -1,0 +1,616 @@
+<html><head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme:
+        {
+          extend:
+          {
+            colors:
+            {
+              'deep-teal': '#155E63',
+              'burnt-orange': '#C65A1E',
+              'midnight-ink': '#102028',
+              'neutral-bg': '#F8F9FA',
+              'neutral-border': '#E9ECEF',
+              'neutral-text': '#495057',
+              'footer-bg': '#1A2E35',
+            },
+            fontFamily:
+            {
+              sans: ['Inter', 'sans-serif'],
+            }
+          }
+        }
+      }
+    </script>
+    <script>
+      window.FontAwesomeConfig = {
+        autoReplaceSvg: 'nest'
+      };
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <style>
+      ::-webkit-scrollbar
+      {
+        display: none;
+      }
+    </style>
+    <style data-grapesjs-styles="true">
+      *
+      {
+        box-sizing: border-box;
+      }
+
+      body
+      {
+        margin: 0;
+      }
+
+      ::-webkit-scrollbar
+      {
+        display: none;
+      }
+
+      *
+      {
+        box-sizing: border-box;
+      }
+
+      body
+      {
+        margin-top: 0px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+        margin-left: 0px;
+      }
+
+      #iq98pj
+      {
+        background-color: rgb(20, 92, 95);
+      }
+
+      #ib5yyj
+      {
+        background-color: rgb(47, 127, 133);
+      }
+
+      #ir53y7
+      {
+        background-color: rgb(31, 126, 130);
+      }
+
+      #iqqrey
+      {
+        background-color: rgb(73, 174, 179);
+      }
+
+      #irh7dm
+      {
+        background-color: rgb(47, 154, 158);
+      }
+
+      #ie96yn
+      {
+        background-color: rgb(122, 205, 207);
+      }
+
+      #igz5y3
+      {
+        background-color: rgb(198, 90, 30);
+      }
+
+      #i9p4x4
+      {
+        background-color: rgb(224, 138, 85);
+      }
+
+      #i4rkhk
+      {
+        background-color: rgb(198, 90, 30);
+      }
+
+      #i0pukj
+      {
+        background-color: rgb(224, 138, 85);
+      }
+
+      /* Hero section background blobs */
+      #hero-section {
+        position: relative;
+        overflow: hidden;
+        background-color: white;        
+      }
+
+      #hero-section::before {
+        content: '';
+        position: absolute;
+        top: -50%;
+        left: -25%;
+        width: 50vw;
+        height: 50vw;
+        max-width: 800px;
+        max-height: 800px;
+        background: radial-gradient(circle, #155E63 0%, transparent 70%);
+        opacity: 0.35;
+        border-radius: 50%;
+        filter: blur(80px);
+        pointer-events: none;
+        z-index: 0;
+      }
+
+      #hero-section::after {
+        content: '';
+        position: absolute;
+        bottom: -30%;
+        right: -10%;
+        width: 55vw;
+        height: 55vw;
+        max-width: 750px;
+        max-height: 750px;
+        background: radial-gradient(circle, #C65A1E 0%, transparent 70%);
+        opacity: 0.35;
+        border-radius: 50%;
+        filter: blur(80px);
+        pointer-events: none;
+        z-index: 0;
+      }
+
+      #hero-section > * {
+        position: relative;
+        z-index: 1;
+      }
+    </style>
+  </head>
+
+  <body class="bg-white text-midnight-ink font-sans antialiased">
+    <header id="header" class="bg-white/80 backdrop-blur-sm sticky top-0 z-50 border-b border-neutral-border">
+      <div class="container mx-auto px-8">
+        <div class="flex justify-between items-center h-20">
+          <a href="index.html" class="flex items-center space-x-2"><span class="w-8 h-8 bg-white rounded-md flex items-center justify-center border border-neutral-border"><img src="assets/images/shared/Logo.svg" alt="MediLens logo" class="h-5 w-auto"></span><span class="text-2xl font-bold text-deep-teal">MediLens</span></a>
+          <nav class="hidden lg:flex items-center space-x-8"><a href="index.html" aria-current="page" class="text-deep-teal font-semibold bg-neutral-bg rounded-md px-2 py-1">Connected Care</a><a href="for-clinics.html" class="text-midnight-ink hover:text-deep-teal transition-colors duration-300 px-2 py-1 rounded-md">For
+              Clinics</a><a href="for-patients.html" class="text-midnight-ink hover:text-deep-teal transition-colors duration-300 px-2 py-1 rounded-md">For
+              You</a><a href="about.html" class="text-midnight-ink hover:text-deep-teal transition-colors duration-300 px-2 py-1 rounded-md">About
+              Us</a></nav><a href="contact.html" class="hidden lg:block bg-transparent border border-neutral-border text-midnight-ink font-medium py-2 px-6 rounded-md hover:border-deep-teal hover:text-deep-teal transition-colors duration-300">Contact
+            Us</a>
+            <button id="mobile-nav-toggle" class="lg:hidden inline-flex items-center justify-center p-2 rounded-md text-midnight-ink hover:bg-neutral-bg focus:outline-none" aria-expanded="false" aria-controls="mobile-nav" aria-label="Open menu">
+              <svg id="mobile-nav-open-icon" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+              <svg id="mobile-nav-close-icon" class="w-6 h-6 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+            </button>
+        </div>
+      </div>
+    </header>
+    <div id="mobile-nav" class="lg:hidden hidden fixed top-20 left-0 right-0 z-40 border-t border-neutral-border bg-white/90 backdrop-blur-sm shadow-lg">
+      <div class="px-6 py-4 space-y-3">
+        <a href="index.html" aria-current="page" class="block text-deep-teal font-semibold bg-neutral-bg rounded-md px-2 py-1">Connected Care</a>
+        <a href="for-clinics.html" class="block text-midnight-ink px-2 py-1 rounded-md">For Clinics</a>
+        <a href="for-patients.html" class="block text-midnight-ink px-2 py-1 rounded-md">For You</a>
+        <a href="about.html" class="block text-midnight-ink px-2 py-1 rounded-md">About Us</a>
+        <a href="contact.html" class="block text-midnight-ink px-2 py-1 rounded-md">Contact Us</a>
+      </div>
+    </div>
+    <script>(function(){var btn=document.getElementById('mobile-nav-toggle'),nav=document.getElementById('mobile-nav'),openI=document.getElementById('mobile-nav-open-icon'),closeI=document.getElementById('mobile-nav-close-icon');if(!btn)return;btn.addEventListener('click',function(){var isHidden=nav.classList.toggle('hidden');btn.setAttribute('aria-expanded',(!isHidden).toString());openI.classList.toggle('hidden');closeI.classList.toggle('hidden');});})();</script>
+    <main>
+      <section id="hero-section" class="h-auto md:h-[calc(100vh-80px)] md:min-h-[700px] md:max-h-[850px] flex items-center">
+        <div class="container mx-auto px-8">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center max-w-7xl mx-auto">
+            <div class="max-w-xl">
+              <h1 class="text-5xl md:text-6xl font-bold text-deep-teal tracking-tight leading-tight">
+                Outpatient Care with Continuity</h1>
+              <h2 class="mt-8 text-xl md:text-2xl text-neutral-text font-normal leading-relaxed">
+                Keeping patient care connected across visits
+              </h2>
+            </div>
+            <div class="h-auto md:h-[600px] flex items-center justify-center"><img src="assets/images/home/home-hero-abstract.webp" alt="Illustration of a doctor reviewing patient's medical history during a consultation" class="w-full h-full object-contain"></div>
+          </div>
+        </div>
+      </section>
+      <section id="company-mission" class="py-20 md:py-32 bg-neutral-bg flex items-center">
+        <div class="container mx-auto px-8">
+          <div class="grid grid-cols-1 md:grid-cols-10 max-w-7xl mx-auto">
+            <!-- Left column: 70% -->
+            <div class="md:col-span-7 flex items-center">
+              <div class="bg-neutral-bg backdrop-blur-sm rounded-2xl p-8 md:p-12">
+                <p class="text-lg md:text-xl text-neutral-text leading-relaxed mb-6">
+                  MediLens is an early-stage health technology startup 
+                  working to connect every healthcare provider to India’s Digital Health 
+                  Infrastructure (ABDM), so patient care can stay continuous 
+                  across doctor visits.
+                </p>
+                <p class="text-lg md:text-xl text-neutral-text leading-relaxed">
+                  We call this Connected Care.
+                </p>
+              </div>
+            </div>
+            <!-- Right column: 30% (empty for future visuals) -->
+            <div class="md:col-span-3 flex items-center justify-center">
+              <div class="flex items-center justify-center rounded-xl overflow-hidden">
+                <img src="assets/images/home/home-connected-paths.webp" alt="Abstract flowing paths representing continuity and connection in care" class="w-full max-w-sm h-auto object-contain rounded-xl">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="the-problem" class="py-12 md:py-24 bg-white">
+        <div class="container mx-auto px-8">
+          <div class="max-w-4xl mx-auto">
+            <h2 class="text-4xl md:text-5xl font-bold text-deep-teal tracking-tight text-center mb-14 md:mb-20">
+              Outpatient care is often episodic</h2>
+            <div class="space-y-14">
+              <div id="problem-row-1" class="flex items-start gap-12">
+                <div class="w-12 flex items-center justify-center"><i class="fa-solid fa-puzzle-piece text-5xl text-deep-teal"></i>
+                </div>
+                <div class="flex-1">
+                  <h3 class="text-2xl font-semibold text-midnight-ink mb-4">
+                    Doctors work with incomplete patient history</h3>
+                  <p class="text-lg text-neutral-text leading-relaxed">Patient history is split 
+                    across paper files, phone messages, and PDFs - leaving doctors to connect 
+                    it all.</p>
+                </div>
+              </div>
+              <div id="problem-row-2" class="flex items-start gap-12">
+                <div class="w-12 flex items-center justify-center"><i class="fa-solid fa-phone-volume text-5xl text-deep-teal"></i>
+                </div>
+                <div class="flex-1">
+                  <h3 class="text-2xl font-semibold text-midnight-ink mb-4">
+                    Patients have questions after they leave the clinic</h3>
+                  <p class="text-lg text-neutral-text leading-relaxed">Patients
+                    often call with repeat questions during busy OPD hours.
+                  </p>
+                </div>
+              </div>
+              <div id="problem-row-3" class="flex items-start gap-12">
+                <div class="w-12 flex items-center justify-center"><i class="fa-solid fa-drafting-compass text-5xl text-deep-teal"></i>
+                </div>
+                <div class="flex-1">
+                  <h3 class="text-2xl font-semibold text-midnight-ink mb-4">
+                    Clinic tools aren’t designed for good follow-up care</h3>
+                  <p class="text-lg text-neutral-text leading-relaxed">
+                    Handwritten notes, scattered EMR entries, and post-visit calls make 
+                    managing follow-ups difficult.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div id="problem-closing" class="mt-16 text-center max-w-3xl mx-auto">
+              <h3 class="text-2xl font-semibold text-midnight-ink">Good outpatient
+                 care depends on continuity — knowing what happened before, 
+                 what’s happening now, and what comes next.</h3>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="connected-care-philosophy" class="py-12 md:py-24 bg-neutral-bg">
+        <div class="container mx-auto px-8">
+          <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-10 md:mb-16">
+              <h2 class="text-4xl md:text-5xl font-bold text-deep-teal tracking-tight mb-12">
+                What we call Connected Care</h2>
+              <div class="max-w-4xl mx-auto space-y-8">
+                <p class="text-lg text-neutral-text leading-relaxed">
+                  Connected Care is an approach to outpatient care that keeps patient 
+                  context up to date across clinics, supports patients between visits, 
+                  and helps doctors build familiarity with their patients to deliver 
+                  more effective care.
+                </p>
+              </div>
+            </div>
+            <!-- Flywheel layout wrapper -->
+            <div class="max-w-4xl mx-auto px-4">
+              <!-- Grid: Mobile 1-col | Tablet 3-col 2-row | Desktop 3-col 1-row -->
+              <div class="grid grid-cols-1 md:grid-cols-3 md:grid-rows-2 lg:grid-rows-1 gap-6 items-center">
+                
+                <!-- Text Block 1: Complete Patient Context -->
+                <div class="order-2 md:order-1 md:col-start-1 md:row-start-1 flex justify-center lg:-mt-24">
+                  <div class="w-full md:w-56 md:min-h-[72px] lg:w-auto lg:min-h-0 lg:max-w-xs rounded-xl p-5 text-center shadow-sm flex items-center justify-center" style="background-color: #145C5F;">
+                    <h4 class="font-semibold text-base text-white">
+                      Complete Patient Context
+                    </h4>
+                  </div>
+                </div>
+
+                <!-- Flywheel Image -->
+                <div class="order-1 md:order-2 md:col-start-2 md:row-start-1 md:row-span-2 lg:row-span-1 flex items-center justify-center">
+                  <img
+                    src="assets/images/home/home-flow-diagram.svg"
+                    alt="Connected care flywheel showing the cycle of patient context, guidance, and continuity"
+                    class="w-full h-auto max-w-xs md:max-w-sm lg:max-w-md object-contain"
+                  />
+                </div>
+
+                <!-- Text Block 2: Guidance Between Visits -->
+                <div class="order-3 md:col-start-3 md:row-start-1 flex justify-center lg:-mt-24">
+                  <div class="w-full md:w-56 md:min-h-[72px] lg:w-auto lg:min-h-0 lg:max-w-xs rounded-xl p-5 text-center shadow-sm flex items-center justify-center" style="background-color: #1F7E82;">
+                    <h4 class="font-semibold text-base text-white">
+                      Guidance Between Visits
+                    </h4>
+                  </div>
+                </div>
+
+              </div>
+
+              <!-- Continuity of Care: Below grid, centered within same wrapper -->
+              <div class="flex justify-center mt-6">
+                <div class="w-full md:w-56 md:min-h-[72px] lg:w-64 lg:min-h-0 rounded-xl p-5 text-center shadow-sm flex items-center justify-center" style="background-color: #2F9A9E;">
+                  <h4 class="font-semibold text-base text-white">
+                    Continuity of Care
+                  </h4>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+      <section id="we-aim-to-provide" class="py-12 md:py-24 bg-white">
+        <div class="container mx-auto px-8">
+          <div class="max-w-7xl mx-auto">
+            <h2 class="text-4xl md:text-5xl font-bold text-deep-teal tracking-tight mb-12 text-center">
+              What Connected Care looks like in practice</h2>
+            <!-- All 5 cards in a single flex container: mobile 1 col, tablet 2-1-2 centered, desktop 3+2 centered -->
+            <div class="flex flex-wrap justify-center gap-8 pt-0 md:pt-8">
+              <!-- Card 1: Complete Patient Context -->
+              <div id="pillar-card-1" class="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col w-full sm:w-[calc(50%-1rem)] lg:w-[calc(33.333%-1.34rem)]">
+                <div id="iq98pj" class="p-6 text-center flex flex-col items-center justify-center min-h-[clamp(140px,18vw,180px)]">
+                  <div id="ib5yyj" class="w-16 h-16 rounded-lg flex items-center justify-center mb-3">
+                    <i class="fa-solid fa-clipboard-list text-2xl text-white"></i>
+                  </div>
+                  <h3 class="text-xl font-semibold text-white">Complete Patient
+                    Context</h3>
+                </div>
+                <div class="p-8 bg-white flex-1">
+                  <p class="text-neutral-text leading-relaxed">Consultations start with full 
+                    context - who the patient is, what was
+                    done before, and how they responded.</p>
+                </div>
+              </div>
+              <!-- Card 2: Guidance Between Visits -->
+              <div id="pillar-card-2" class="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col w-full sm:w-[calc(50%-1rem)] lg:w-[calc(33.333%-1.34rem)]">
+                <div id="ir53y7" class="p-6 text-center flex flex-col items-center justify-center min-h-[clamp(140px,18vw,180px)]">
+                  <div id="iqqrey" class="w-16 h-16 rounded-lg flex items-center justify-center mb-3">
+                    <i class="fa-solid fa-comments text-2xl text-white"></i>
+                  </div>
+                  <h3 class="text-xl font-semibold text-white">Guidance Between
+                    Visits</h3>
+                </div>
+                <div class="p-8 bg-white flex-1">
+                  <p class="text-neutral-text leading-relaxed">Post-visit
+                    calls from patients are organised and manageable, without burdening clinics.</p>
+                </div>
+              </div>
+              <!-- Card 3: Continuity of Care - full width on tablet to create 2-1-2 layout -->
+              <div id="pillar-card-3" class="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col w-full sm:w-full sm:max-w-[calc(50%-1rem)] lg:w-[calc(33.333%-1.34rem)] lg:max-w-none">
+                <div id="irh7dm" class="p-6 text-center flex flex-col items-center justify-center min-h-[clamp(140px,18vw,180px)]">
+                  <div id="ie96yn" class="w-16 h-16 rounded-lg flex items-center justify-center mb-3">
+                    <i class="fa-solid fa-hand-holding-heart text-2xl text-white"></i>
+                  </div>
+                  <h3 class="text-xl font-semibold text-white">Continuity of
+                    Care</h3>
+                </div>
+                <div class="p-8 bg-white flex-1">
+                  <p class="text-neutral-text leading-relaxed">
+                    Familiarity with a patient’s case and treatment response over 
+                    time helps doctors deliver more effective care.</p>
+                </div>
+              </div>
+              <!-- Card 4: Intelligent Clinic Support -->
+              <div id="pillar-card-4" class="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col w-full sm:w-[calc(50%-1rem)] lg:w-[calc(33.333%-1.34rem)]">
+                <div id="igz5y3" class="p-6 text-center flex flex-col items-center justify-center min-h-[clamp(140px,18vw,180px)]">
+                  <div id="i9p4x4" class="w-16 h-16 rounded-lg flex items-center justify-center mb-3">
+                    <i class="fa-solid fa-microchip text-2xl text-white"></i>
+                  </div>
+                  <h3 class="text-xl font-semibold text-white">Intelligent Clinic Support</h3>
+                </div>
+                <div class="p-8 bg-white flex-1">
+                  <p class="text-neutral-text leading-relaxed">Clinic systems are designed for the pace 
+                    and realities of Indian outpatient clinics.</p>
+                </div>
+              </div>
+              <!-- Card 5: ABHA & Insurance Ready -->
+              <div id="pillar-card-5" class="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col w-full sm:w-[calc(50%-1rem)] lg:w-[calc(33.333%-1.34rem)]">
+                <div id="i4rkhk" class="p-6 text-center flex flex-col items-center justify-center min-h-[clamp(140px,18vw,180px)]">
+                  <div id="i0pukj" class="w-16 h-16 rounded-lg flex items-center justify-center mb-3">
+                    <i class="fa-solid fa-shield-alt text-2xl text-white"></i>
+                  </div>
+                  <h3 class="text-xl font-semibold text-white">ABHA & Insurance Ready</h3>
+                </div>
+                <div class="p-8 bg-white flex-1">
+                  <p class="text-neutral-text leading-relaxed">Ready for India's digital health IDs (ABHA) 
+                    and growing OPD insurance coverage.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="why-connected-care-matters" class="py-12 md:py-24 bg-neutral-bg">
+        <div class="container mx-auto px-8">
+          <div class="max-w-7xl mx-auto">
+            <!-- Outer wrapper with shadow for tablet+ unified card effect -->
+            <div class="grid grid-cols-1 md:grid-cols-2 md:gap-x-10">
+              <!-- Shadow wrapper for clinic card (visible on md+) -->
+              <div class="hidden md:block md:col-start-1 md:row-start-1 md:row-span-5 bg-orange-100/20 rounded-xl shadow-lg pointer-events-none"></div>
+              <!-- Shadow wrapper for patient card (visible on md+) -->
+              <div class="hidden md:block md:col-start-2 md:row-start-1 md:row-span-5 bg-blue-100/20 rounded-xl shadow-lg pointer-events-none"></div>
+
+              <!-- Clinic Header -->
+              <div id="clinics-benefits" class="order-1 md:order-none md:col-start-1 md:row-start-1 bg-orange-100/20 md:bg-transparent rounded-t-2xl md:rounded-none shadow-lg md:shadow-none p-8 lg:p-10">
+                <h2 class="text-3xl font-bold text-deep-teal tracking-tight text-center flex items-center justify-center">
+                  Why clinics need Connected Care</h2>
+              </div>
+
+              <!-- Patient Header -->
+              <div id="patients-benefits" class="order-6 md:order-none md:col-start-2 md:row-start-1 bg-blue-100/20 md:bg-transparent rounded-t-2xl md:rounded-none shadow-lg md:shadow-none mt-10 md:mt-0 p-8 lg:p-10">
+                <h2 class="text-3xl font-bold text-deep-teal tracking-tight text-center flex items-center justify-center">
+                  Why patients need Connected Care</h2>
+              </div>
+
+              <!-- Clinic Bullet 1 -->
+              <div class="order-2 md:order-none md:col-start-1 md:row-start-2 bg-orange-100/20 md:bg-transparent px-8 lg:px-10 py-6">
+                <div class="flex items-start gap-6">
+                  <div class="flex-shrink-0 w-8 h-8 flex items-start justify-center mt-1"><i class="fa-solid fa-clipboard-list text-[1.8rem] text-burnt-orange"></i></div>
+                  <div>
+                    <h3 class="text-lg font-semibold text-midnight-ink mb-3">
+                      Start every consultation with clear patient history</h3>
+                    <p class="text-neutral-text leading-relaxed">No more
+                      searching old messages or relying on memory.</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Patient Bullet 1 -->
+              <div class="order-7 md:order-none md:col-start-2 md:row-start-2 bg-blue-100/20 md:bg-transparent px-8 lg:px-10 py-6">
+                <div class="flex items-start gap-6">
+                  <div class="flex-shrink-0 w-8 h-8 flex items-start justify-center mt-1"><i class="fa-solid fa-layer-group text-[1.8rem] text-blue-700"></i></div>
+                  <div>
+                    <h3 class="text-lg font-semibold text-midnight-ink mb-3">
+                      Care that builds on every visit</h3>
+                    <p class="text-neutral-text leading-relaxed">Each
+                      consultation builds on past visits, with clear patient context guiding care.</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Clinic Bullet 2 -->
+              <div class="order-3 md:order-none md:col-start-1 md:row-start-3 bg-orange-100/20 md:bg-transparent px-8 lg:px-10 py-6">
+                <div class="flex items-start gap-6">
+                  <div class="flex-shrink-0 w-8 h-8 flex items-start justify-center mt-1"><i class="fa-solid fa-handshake text-[1.8rem] text-burnt-orange"></i></div>
+                  <div>
+                    <h3 class="text-lg font-semibold text-midnight-ink mb-3">
+                      Patients return for follow-ups</h3>
+                    <p class="text-neutral-text leading-relaxed">Continuity and 
+                      familiarity encourage timely follow-ups.</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Patient Bullet 2 -->
+              <div class="order-8 md:order-none md:col-start-2 md:row-start-3 bg-blue-100/20 md:bg-transparent px-8 lg:px-10 py-6">
+                <div class="flex items-start gap-6">
+                  <div class="flex-shrink-0 w-8 h-8 flex items-start justify-center mt-1"><i class="fa-solid fa-file-circle-check text-[1.8rem] text-blue-700"></i></div>
+                  <div>
+                    <h3 class="text-lg font-semibold text-midnight-ink mb-3">
+                      Clarity after every visit</h3>
+                    <p class="text-neutral-text leading-relaxed">Clear, documented instructions 
+                      after every doctor visit.</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Clinic Bullet 3 -->
+              <div class="order-4 md:order-none md:col-start-1 md:row-start-4 bg-orange-100/20 md:bg-transparent px-8 lg:px-10 py-6">
+                <div class="flex items-start gap-6">
+                  <div class="flex-shrink-0 w-8 h-8 flex items-start justify-center mt-1"><i class="fa-solid fa-comments text-[1.8rem] text-burnt-orange"></i></div>
+                  <div>
+                    <h3 class="text-lg font-semibold text-midnight-ink mb-3">
+                      Post-visit patient queries are better managed</h3>
+                    <p class="text-neutral-text leading-relaxed">Patient clarifications are 
+                      organized, instead of scattered calls and messages</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Patient Bullet 3 -->
+              <div class="order-9 md:order-none md:col-start-2 md:row-start-4 bg-blue-100/20 md:bg-transparent px-8 lg:px-10 py-6">
+                <div class="flex items-start gap-6">
+                  <div class="flex-shrink-0 w-8 h-8 flex items-start justify-center mt-1"><i class="fa-solid fa-money-bill-wave text-[1.8rem] text-blue-700"></i></div>
+                  <div>
+                    <h3 class="text-lg font-semibold text-midnight-ink mb-3">
+                      Avoid unnecessary medical spend</h3>
+                    <p class="text-neutral-text leading-relaxed">Past reports are easy to find, 
+                      reducing unnecessary repeat tests and procedures.</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Clinic Bullet 4 -->
+              <div class="order-5 md:order-none md:col-start-1 md:row-start-5 bg-orange-100/20 md:bg-transparent rounded-b-2xl md:rounded-none shadow-lg md:shadow-none px-8 lg:px-10 pt-6 pb-8 lg:pb-10">
+                <div class="flex items-start gap-6">
+                  <div class="flex-shrink-0 w-8 h-8 flex items-start justify-center mt-1"><i class="fa-solid fa-money-bill-wave text-[1.8rem] text-burnt-orange"></i></div>
+                  <div>
+                    <h3 class="text-lg font-semibold text-midnight-ink mb-3">
+                      Post-visit care is recognised and reimbursed</h3>
+                    <p class="text-neutral-text leading-relaxed">Post-visit patient calls 
+                      are treated as clinic work and compensated accordingly.</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Patient Bullet 4 -->
+              <div class="order-10 md:order-none md:col-start-2 md:row-start-5 bg-blue-100/20 md:bg-transparent rounded-b-2xl md:rounded-none shadow-lg md:shadow-none px-8 lg:px-10 pt-6 pb-8 lg:pb-10">
+                <div class="flex items-start gap-6">
+                  <div class="flex-shrink-0 w-8 h-8 flex items-start justify-center mt-1"><i class="fa-solid fa-comments text-[1.8rem] text-blue-700"></i></div>
+                  <div>
+                    <h3 class="text-lg font-semibold text-midnight-ink mb-3">
+                      Stay connected to your clinic</h3>
+                    <p class="text-neutral-text leading-relaxed">Stay connected to 
+                      your doctor between visits for clarifications and guidance.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="coming-soon" class="py-12 md:py-24 bg-teal-50">
+        <div class="container mx-auto px-8">
+          <div class="max-w-2xl mx-auto text-center pb-8">
+            <h3 class="text-2xl font-semibold text-midnight-ink mb-6">Coming
+              soon</h3>
+            <p class="text-lg text-neutral-text leading-relaxed">We're building
+              Connected Care in close partnership with clinicians and early
+              users to ensure every part of the experience reflects real-world OPD
+              needs.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer id="footer" class="bg-footer-bg text-white">
+      <div class="container mx-auto px-8 py-16">
+        <div class="grid grid-cols-1 md:grid-cols-[1.3fr_1fr_1fr_1fr] gap-8">
+          <div>
+            <div class="mt-4">
+              <a href="index.html" class="flex items-center space-x-2"><span class="w-8 h-8 bg-white rounded-md flex items-center justify-center"><img src="assets/images/shared/Logo.svg" alt="MediLens logo" class="h-5 w-auto"></span><span class="text-2xl font-bold">MediLens</span></a>
+              <p class="mt-4 text-gray-400 text-sm whitespace-nowrap">Keeping Care Connected</p>
+            </div>
+          </div>
+          <div>
+            <ul class="mt-4 space-y-3">
+              <li><a href="for-clinics.html" class="text-gray-400 hover:text-white transition-colors">For
+                  Clinics</a></li>
+              <li><a href="for-patients.html" class="text-gray-400 hover:text-white transition-colors">For
+                  You</a></li>
+            </ul>
+          </div>
+          <div>
+            <ul class="mt-4 space-y-3">
+              <li><a href="about.html" class="text-gray-400 hover:text-white transition-colors">About
+                  Us</a></li>
+            </ul>
+          </div>
+          <div>
+            <ul class="mt-4 space-y-3">
+              <li><a href="contact.html" class="text-gray-400 hover:text-white transition-colors">Contact
+                  Us</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="mt-16 border-t border-gray-600 pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-gray-400">
+          <p>© 2025 Medilens Technologies Private Limited. All rights reserved.
+          </p>
+          <div class="flex space-x-4 mt-4 md:mt-0"><a href="privacy.html" class="hover:text-white transition-colors">Privacy Policy</a><a href="terms.html" class="hover:text-white transition-colors">Terms of
+              Service</a></div>
+        </div>
+      </div>
+    </footer>
+  
+
+</body></html>

@@ -1,0 +1,242 @@
+<html>
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap"
+      rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme:
+        {
+          extend:
+          {
+            colors:
+            {
+              'deep-teal': '#155E63',
+              'burnt-orange': '#C65A1E',
+              'midnight-ink': '#102028',
+              'neutral-bg': '#F8F9FA',
+              'neutral-border': '#E9ECEF',
+              'neutral-text': '#495057',
+              'footer-bg': '#1A2E35',
+            },
+            fontFamily:
+            {
+              sans: ['Inter', 'sans-serif'],
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      ::-webkit-scrollbar { display: none; }
+      * { box-sizing: border-box; }
+      body { margin: 0; }
+    </style>
+  </head>
+
+  <body class="bg-white text-midnight-ink font-sans antialiased">
+    <header id="header"
+      class="bg-white/80 backdrop-blur-sm sticky top-0 z-50 border-b border-neutral-border">
+      <div class="container mx-auto px-8">
+        <div class="flex justify-between items-center h-20">
+          <a href="index.html" class="flex items-center space-x-2"><span
+              class="w-8 h-8 bg-white rounded-md flex items-center justify-center border border-neutral-border"><img src="assets/images/shared/Logo.svg" alt="MediLens logo" class="h-5 w-auto"></span><span
+              class="text-2xl font-bold text-deep-teal">MediLens</span></a>
+          <nav class="hidden lg:flex items-center space-x-8"><a href="index.html"
+              class="text-midnight-ink hover:text-deep-teal transition-colors duration-300 px-2 py-1 rounded-md">Connected Care</a><a
+              href="for-clinics.html"
+              class="text-midnight-ink hover:text-deep-teal transition-colors duration-300 px-2 py-1 rounded-md">For
+              Clinics</a><a href="for-patients.html"
+              class="text-midnight-ink hover:text-deep-teal transition-colors duration-300 px-2 py-1 rounded-md">For
+              You</a><a href="about.html"
+              class="text-midnight-ink hover:text-deep-teal transition-colors duration-300 px-2 py-1 rounded-md">About
+              Us</a></nav><a href="contact.html" aria-current="page" class="hidden lg:block bg-deep-teal text-white font-medium py-2 px-6 rounded-md cursor-default">Contact Us</a>
+            <button id="mobile-nav-toggle" class="lg:hidden inline-flex items-center justify-center p-2 rounded-md text-midnight-ink hover:bg-neutral-bg focus:outline-none" aria-expanded="false" aria-controls="mobile-nav" aria-label="Open menu">
+              <svg id="mobile-nav-open-icon" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+              <svg id="mobile-nav-close-icon" class="w-6 h-6 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+            </button>
+        </div>
+      </div>
+    </header>
+    <div id="mobile-nav" class="lg:hidden hidden fixed top-20 left-0 right-0 z-40 border-t border-neutral-border bg-white/90 backdrop-blur-sm shadow-lg">
+      <div class="px-6 py-4 space-y-3">
+        <a href="index.html" class="block text-midnight-ink px-2 py-1 rounded-md">Connected Care</a>
+        <a href="for-clinics.html" class="block text-midnight-ink px-2 py-1 rounded-md">For Clinics</a>
+        <a href="for-patients.html" class="block text-midnight-ink px-2 py-1 rounded-md">For You</a>
+        <a href="about.html" class="block text-midnight-ink px-2 py-1 rounded-md">About Us</a>
+        <a href="contact.html" aria-current="page" class="block text-deep-teal font-semibold bg-neutral-bg rounded-md px-2 py-1">Contact Us</a>
+      </div>
+    </div>
+    <script>(function(){var btn=document.getElementById('mobile-nav-toggle'),nav=document.getElementById('mobile-nav'),openI=document.getElementById('mobile-nav-open-icon'),closeI=document.getElementById('mobile-nav-close-icon');if(!btn)return;btn.addEventListener('click',function(){var isHidden=nav.classList.toggle('hidden');btn.setAttribute('aria-expanded',(!isHidden).toString());openI.classList.toggle('hidden');closeI.classList.toggle('hidden');});})();</script>
+    <main>
+      <section id="contact-hero" class="pt-12 pb-4 md:pt-24 md:pb-6 bg-white">
+        <div class="max-w-7xl mx-auto px-12 lg:px-16">
+          <div class="w-full">
+            <h1
+              class="text-4xl md:text-5xl font-bold text-deep-teal tracking-tight mb-12">
+              Contact Us
+            </h1>            
+            <p class="text-lg text-neutral-text leading-relaxed">
+              We're building MediLens in close collaboration with clinicians, 
+              technologists, and people who care deeply about improving 
+              outpatient care.
+              If you're interested in partnerships, investment conversations, or
+              exploring career opportunities, we'd love to hear from you.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section id="contact-form-section" class="pt-4 md:pt-8 pb-12 bg-white">
+        <div class="max-w-7xl mx-auto px-12 lg:px-16">
+          <div class="w-full">            
+            <form id="contact-form"
+              class="space-y-6 max-w-2xl">
+             <div><label for="name"
+                  class="block text-base font-medium text-midnight-ink mb-2">Name</label><input
+                  type="text" id="name" name="name" required=""
+                  class="w-full px-4 py-3 border border-neutral-border rounded-md text-base text-midnight-ink focus:outline-none focus:border-deep-teal transition-colors">
+              </div>
+              <div><label for="email"
+                  class="block text-base font-medium text-midnight-ink mb-2">Email</label><input
+                  type="email" id="email" name="email" required=""
+                  class="w-full px-4 py-3 border border-neutral-border rounded-md text-base text-midnight-ink focus:outline-none focus:border-deep-teal transition-colors">
+              </div>
+              <fieldset>
+                <legend class="block text-sm font-medium text-neutral-text uppercase tracking-wide mb-3">Inquiry Type</legend>
+                <div class="flex flex-wrap gap-6"><label
+                    class="flex items-center"><input type="radio"
+                      name="inquiry-type" value="partnership" required=""
+                      class="w-4 h-4 text-deep-teal border-neutral-border focus:ring-deep-teal focus:ring-2"><span
+                      class="ml-3 text-base text-midnight-ink">Partnership</span></label><label
+                    class="flex items-center"><input type="radio"
+                      name="inquiry-type" value="careers"
+                      class="w-4 h-4 text-deep-teal border-neutral-border focus:ring-deep-teal focus:ring-2"><span
+                      class="ml-3 text-base text-midnight-ink">Careers</span></label><label
+                    class="flex items-center"><input type="radio"
+                      name="inquiry-type" value="general"
+                      class="w-4 h-4 text-deep-teal border-neutral-border focus:ring-deep-teal focus:ring-2"><span
+                      class="ml-3 text-base text-midnight-ink">General</span></label>
+                </div>
+              </fieldset>
+              <div><label for="message"
+                  class="block text-base font-medium text-midnight-ink mb-2">Message</label><textarea id="message" name="message" rows="6" required="" class="w-full px-4 py-3 border border-neutral-border rounded-md text-base text-midnight-ink focus:outline-none focus:border-deep-teal transition-colors resize-none"></textarea>
+              </div>
+              <div class="pb-4"><button type="submit"
+                  class="bg-deep-teal text-white font-medium py-3 px-8 rounded-md hover:bg-opacity-90 transition-colors duration-300">
+                  Send Message
+                </button></div>
+            </form>
+            <div id="success-message"
+              class="hidden mt-8 p-6 bg-neutral-bg border-l-4 border-deep-teal max-w-2xl">
+              <p class="text-base text-midnight-ink">Thanks for connecting with
+                us. We'll be in touch soon — we look forward to exploring how we
+                can work together to shape the future of outpatient care.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="privacy-note" class="py-16 bg-teal-50">
+        <div class="max-w-7xl mx-auto px-12 lg:px-16">
+          <div class="max-w-4xl mx-auto text-center"> 
+            <p class="text-sm text-gray-500 leading-relaxed">
+              We read every message personally and usually respond within a few working days.
+            </p>           
+            <p class="text-sm text-gray-500 leading-relaxed mt-8">
+              Your contact information will be used solely to respond to your
+              inquiry. We do not share, sell, or distribute your information to
+              third parties. For more details, please refer to our <a href="privacy.html"
+                class="text-deep-teal hover:text-burnt-orange transition-colors">Privacy
+                Policy</a>.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer id="footer" class="bg-footer-bg text-white">
+      <div class="container mx-auto px-8 py-16">
+        <div class="grid grid-cols-1 md:grid-cols-[1.3fr_1fr_1fr_1fr] gap-8">
+          <div>
+            <div class="mt-4">
+              <a href="index.html" class="flex items-center space-x-2"><span
+                  class="w-8 h-8 bg-white rounded-md flex items-center justify-center"><img src="assets/images/shared/Logo.svg" alt="MediLens logo" class="h-5 w-auto"></span><span class="text-2xl font-bold">MediLens</span></a>
+              <p class="mt-4 text-gray-400 text-sm whitespace-nowrap">Keeping Care Connected</p>
+            </div>
+          </div>
+          <div>
+            <ul class="mt-4 space-y-3">
+              <li><a href="for-clinics.html"
+                  class="text-gray-400 hover:text-white transition-colors">For
+                  Clinics</a></li>
+              <li><a href="for-patients.html"
+                  class="text-gray-400 hover:text-white transition-colors">For
+                  You</a></li>
+            </ul>
+          </div>
+          <div>
+            <ul class="mt-4 space-y-3">
+              <li><a href="about.html"
+                  class="text-gray-400 hover:text-white transition-colors">About
+                  Us</a></li>
+            </ul>
+          </div>
+          <div>
+            <ul class="mt-4 space-y-3">
+              <li><a href="contact.html"
+                  class="text-gray-400 hover:text-white transition-colors">Contact
+                  Us</a></li>
+            </ul>
+          </div>
+        </div>
+        <div
+          class="mt-16 border-t border-gray-600 pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-gray-400">
+          <p>© 2025 Medilens Technologies Private Limited. All rights reserved.
+          </p>
+          <div class="flex space-x-4 mt-4 md:mt-0"><a href="privacy.html"
+              class="hover:text-white transition-colors">Privacy Policy</a><a
+              href="terms.html" class="hover:text-white transition-colors">Terms of
+              Service</a></div>
+        </div>
+      </div>
+    </footer>
+   <script>
+  const form = document.getElementById('contact-form');
+  const successMessage = document.getElementById('success-message');
+
+  form.addEventListener('submit', async function (e) {
+    e.preventDefault(); // stop browser submit
+
+    const formData = new FormData(form);
+    formData.append('_subject', 'Request from MediLens website');
+
+    try {
+      const response = await fetch('https://formspree.io/f/xeeqqwzp', {
+        method: 'POST',
+        headers: {
+          'Accept': 'application/json'
+        },
+        body: formData
+      });
+
+      if (response.ok) {
+        form.reset();
+        form.classList.add('hidden');
+        successMessage.classList.remove('hidden');
+        successMessage.scrollIntoView({ behavior: 'smooth' });
+      } else {
+        alert('Something went wrong. Please try again.');
+      }
+    } catch (error) {
+      alert('Network error. Please try again.');
+    }
+  });
+</script>
+  </body>
+
+</html>

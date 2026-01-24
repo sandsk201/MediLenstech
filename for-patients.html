@@ -1,0 +1,403 @@
+<html>
+
+  <head>
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For You</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap"
+      rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme:
+        {
+          extend:
+          {
+            colors:
+            {
+              'deep-teal': '#155E63',
+              'burnt-orange': '#C65A1E',
+              'midnight-ink': '#102028',
+              'neutral-bg': '#F8F9FA',
+              'neutral-border': '#E9ECEF',
+              'neutral-text': '#495057',
+              'footer-bg': '#1A2E35',
+            },
+            fontFamily:
+            {
+              sans: ['Inter', 'sans-serif'],
+            }
+          }
+        }
+      }
+    </script>
+    <script>
+      window.FontAwesomeConfig = {
+        autoReplaceSvg: 'nest'
+      };
+    </script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"
+      crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <style>
+      ::-webkit-scrollbar
+      {
+        display: none;
+      }
+    </style>
+    <style data-grapesjs-styles="true">
+      *
+      {
+        box-sizing: border-box;
+      }
+
+      body
+      {
+        margin: 0;
+      }
+
+      ::-webkit-scrollbar
+      {
+        display: none;
+      }
+
+      *
+      {
+        box-sizing: border-box;
+      }
+
+      body
+      {
+        margin-top: 0px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+        margin-left: 0px;
+      }
+
+      /* Hero section background blobs */
+      #hero-section {
+        position: relative;
+        overflow: hidden;
+        background-color: white;        
+      }
+
+      #hero-section::before {
+        content: '';
+        position: absolute;
+        bottom: -30%;
+        left: -15%;
+        width: 55vw;
+        height: 55vw;
+        max-width: 800px;
+        max-height: 800px;
+        background: radial-gradient(circle, #155E63 0%, transparent 70%);
+        opacity: 0.35;
+        border-radius: 50%;
+        filter: blur(80px);
+        pointer-events: none;
+        z-index: 0;
+      }
+
+      #hero-section::after {
+        content: '';
+        position: absolute;
+        top: -30%;
+        right: -20%;
+        width: 55vw;
+        height: 55vw;
+        max-width: 750px;
+        max-height: 750px;
+        background: radial-gradient(circle, #C65A1E 0%, transparent 70%);
+        opacity: 0.35;
+        border-radius: 50%;
+        filter: blur(80px);
+        pointer-events: none;
+        z-index: 0;
+      }
+
+      #hero-section > * {
+        position: relative;
+        z-index: 1;
+      }
+    </style>
+  </head>
+
+  <body class="bg-white text-midnight-ink font-sans antialiased">
+    <header id="header"
+      class="bg-white/80 backdrop-blur-sm sticky top-0 z-50 border-b border-neutral-border">
+      <div class="container mx-auto px-8">
+        <div class="flex justify-between items-center h-20">
+          <a href="index.html" class="flex items-center space-x-2"><span
+              class="w-8 h-8 bg-white rounded-md flex items-center justify-center border border-neutral-border"><img src="assets/images/shared/Logo.svg" alt="MediLens logo" class="h-5 w-auto"></span><span
+              class="text-2xl font-bold text-deep-teal">MediLens</span></a>
+          <nav class="hidden lg:flex items-center space-x-8"><a href="index.html"
+              class="text-midnight-ink hover:text-deep-teal transition-colors duration-300 px-2 py-1 rounded-md">Connected
+              Care</a><a href="for-clinics.html"
+              class="text-midnight-ink hover:text-deep-teal transition-colors duration-300 px-2 py-1 rounded-md">For
+              Clinics</a><a href="for-patients.html" aria-current="page" class="text-deep-teal font-semibold bg-neutral-bg rounded-md px-2 py-1">For
+              You</a><a href="about.html"
+              class="text-midnight-ink hover:text-deep-teal transition-colors duration-300 px-2 py-1 rounded-md">About
+              Us</a></nav><a href="contact.html" class="hidden lg:block bg-transparent border border-neutral-border text-midnight-ink font-medium py-2 px-6 rounded-md hover:border-deep-teal hover:text-deep-teal transition-colors duration-300">Contact Us</a>
+            <button id="mobile-nav-toggle" class="lg:hidden inline-flex items-center justify-center p-2 rounded-md text-midnight-ink hover:bg-neutral-bg focus:outline-none" aria-expanded="false" aria-controls="mobile-nav" aria-label="Open menu">
+              <svg id="mobile-nav-open-icon" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+              <svg id="mobile-nav-close-icon" class="w-6 h-6 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+            </button>
+        </div>
+      </div>
+    </header>
+    <div id="mobile-nav" class="lg:hidden hidden fixed top-20 left-0 right-0 z-40 border-t border-neutral-border bg-white/90 backdrop-blur-sm shadow-lg">
+      <div class="px-6 py-4 space-y-3">
+        <a href="index.html" class="block text-midnight-ink px-2 py-1 rounded-md">Connected Care</a>
+        <a href="for-clinics.html" class="block text-midnight-ink px-2 py-1 rounded-md">For Clinics</a>
+        <a href="for-patients.html" aria-current="page" class="block text-deep-teal font-semibold bg-neutral-bg rounded-md px-2 py-1">For You</a>
+        <a href="about.html" class="block text-midnight-ink px-2 py-1 rounded-md">About Us</a>
+        <a href="contact.html" class="block text-midnight-ink px-2 py-1 rounded-md">Contact Us</a>
+      </div>
+    </div>
+    <script>(function(){var btn=document.getElementById('mobile-nav-toggle'),nav=document.getElementById('mobile-nav'),openI=document.getElementById('mobile-nav-open-icon'),closeI=document.getElementById('mobile-nav-close-icon');if(!btn)return;btn.addEventListener('click',function(){var isHidden=nav.classList.toggle('hidden');btn.setAttribute('aria-expanded',(!isHidden).toString());openI.classList.toggle('hidden');closeI.classList.toggle('hidden');});})();</script>
+    <main>
+      <section id="hero-section" class="h-auto md:h-[calc(100vh-80px)] md:min-h-[700px] md:max-h-[850px] flex items-center">
+        <div class="container mx-auto px-8">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center max-w-7xl mx-auto">
+            <div class="max-w-xl">
+              <h1 class="text-5xl md:text-6xl font-bold text-deep-teal tracking-tight leading-tight">Connected Care for Your Health</h1>
+              <h2 class="mt-8 text-xl md:text-2xl text-neutral-text font-normal leading-relaxed">So every doctor visit builds on the last</h2>
+            </div>
+            <div class="h-auto md:h-[600px] flex items-center justify-center"><img src="assets/images/patients/patients-hero-curves.webp" alt="Abstract image of person looking at a constellation of stars, representing different aspects of healthcare" class="w-full h-full object-contain"></div>
+          </div>
+        </div>
+      </section>
+      <section id="when-care-stays-connected" class="py-12 md:py-24 bg-neutral-bg">
+        <div class="container mx-auto px-8">
+          <div class="max-w-6xl mx-auto">
+            <h2
+              class="text-4xl md:text-5xl font-bold text-deep-teal tracking-tight mb-12 md:mb-16 text-center">
+              Why healthcare feels complicated
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 mb-16">
+              <div>
+                <p class="text-xl text-neutral-text leading-normal md:leading-loose mb-6">
+                  Healthcare is often confusing — clinics are many, doctor visits are 
+                  quick, medical history is scattered, and insurance coverage is unclear.
+                </p>
+                <p class="text-xl text-neutral-text leading-normal md:leading-loose">
+                  Clear guidance is often missing when you need it most.
+                </p>
+              </div>
+              <div class="flex flex-col items-center">
+                <div class="w-full max-w-md"><img
+                  src="assets/images/patients/patients-person-outline.webp"
+                    alt="Illustration of a person with several questions, representing confusion and uncertainty"
+                    class="w-full h-auto object-contain rounded-xl">                  
+                </div>
+              </div>
+            </div>
+            <div class="grid grid-cols-1 lg:grid-cols-5 gap-8 items-center">
+              <div class="lg:col-span-2 hidden md:block">
+                <div
+                  class="h-[387px] lg:h-[280px] overflow-hidden flex items-center justify-center hidden md:block">
+                  <img
+                    src="assets/images/patients/patients-landscape-lines.webp"
+                    alt="Illustration of a person walking towards a bright horizon with futuristic buildings, representing a better future"
+                    class="w-full h-full object-cover object-[center_55%] rounded-xl">
+                </div>
+              </div>
+              <div class="lg:col-span-3 flex items-center">
+                <div class="flex items-center gap-4">
+                  <div class="w-1 h-20 bg-deep-teal opacity-30 flex-shrink-0">
+                  </div>
+                  <h3
+                    class="text-2xl font-semibold text-midnight-ink leading-relaxed">
+                    Connected Care helps guide your healthcare — from finding
+                     the right care, to follow-up clarifications, to 
+                     building doctor relationships over time.
+                  </h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="medilens-companion" class="py-12 md:py-20 bg-white">
+        <div class="container mx-auto px-8">
+          <div class="max-w-6xl mx-auto">
+            <h2
+              class="text-4xl md:text-5xl font-bold text-deep-teal tracking-tight mb-14 md:mb-16 text-center">
+              What Connected Care means for you
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
+              <div id="companion-benefit-1"
+                class="bg-white border border-neutral-border rounded-lg shadow-lg p-8 flex flex-col lg:flex-row gap-6">
+                <div class="flex-shrink-0 flex justify-center lg:justify-start">
+                  <div
+                    class="w-16 h-16 bg-deep-teal bg-opacity-10 rounded-full flex items-center justify-center">
+                    <i
+                      class="fa-solid fa-list-check text-2xl text-deep-teal"></i>
+                  </div>
+                </div>
+                <div>
+                  <h3 class="text-xl font-semibold text-midnight-ink mb-3">
+                    Know what to do after each consultation
+                  </h3>
+                  <p class="text-neutral-text leading-relaxed">Clear, documented next steps help 
+                    you leave the clinic feeling confident.
+                  </p>
+                </div>
+              </div>
+              <div id="companion-benefit-2"
+                class="bg-white border border-neutral-border rounded-lg shadow-lg p-8 flex flex-col lg:flex-row gap-6">
+                <div class="flex-shrink-0 flex justify-center lg:justify-start">
+                  <div
+                    class="w-16 h-16 bg-deep-teal bg-opacity-10 rounded-full flex items-center justify-center">
+                    <i
+                      class="fa-solid fa-file-medical text-2xl text-deep-teal"></i>
+                  </div>
+                </div>
+                <div>
+                  <h3 class="text-xl font-semibold text-midnight-ink mb-3">
+                    Understand your health reports better</h3>
+                  <p class="text-neutral-text leading-relaxed">Medical terms and
+                    test results explained in plain and simple language.
+                  </p>
+                </div>
+              </div>
+              <div id="companion-benefit-3"
+                class="bg-white border border-neutral-border rounded-lg shadow-lg p-8 flex flex-col lg:flex-row gap-6">
+                <div class="flex-shrink-0 flex justify-center lg:justify-start">
+                  <div
+                    class="w-16 h-16 bg-deep-teal bg-opacity-10 rounded-full flex items-center justify-center">
+                    <i class="fa-solid fa-folder-open text-2xl text-deep-teal"></i>
+                  </div>
+                </div>
+                <div>
+                  <h3 class="text-xl font-semibold text-midnight-ink mb-3">
+                    All your health records in one place
+                  </h3>
+                  <p class="text-neutral-text leading-relaxed">Your prescriptions, lab reports, and doctor's 
+                    notes stay organised and ready to share.
+                  </p>
+                </div>
+              </div>
+              <div id="companion-benefit-4"
+                class="bg-white border border-neutral-border rounded-lg shadow-lg p-8 flex flex-col lg:flex-row gap-6">
+                <div class="flex-shrink-0 flex justify-center lg:justify-start">
+                  <div
+                    class="w-16 h-16 bg-deep-teal bg-opacity-10 rounded-full flex items-center justify-center">
+                    <i
+                      class="fa-solid fa-comments text-2xl text-deep-teal"></i>
+                  </div>
+                </div>
+                <div>
+                  <h3 class="text-xl font-semibold text-midnight-ink mb-3">
+                    Care continues between clinic visits
+                  </h3>
+                  <p class="text-neutral-text leading-relaxed">Gentle guidance and clarifications 
+                    from your clinic, when needed.
+                  </p>
+                </div>
+              </div>
+              <div id="companion-benefit-5"
+                class="bg-white border border-neutral-border rounded-lg shadow-lg p-8 flex flex-col lg:flex-row gap-6">
+                <div class="flex-shrink-0 flex justify-center lg:justify-start">
+                  <div
+                    class="w-16 h-16 bg-deep-teal bg-opacity-10 rounded-full flex items-center justify-center">
+                    <i class="fa-solid fa-hand-holding-heart text-2xl text-deep-teal"></i>
+                  </div>
+                </div>
+                <div>
+                  <h3 class="text-xl font-semibold text-midnight-ink mb-3">Doctor knows you over time
+                  </h3>
+                  <p class="text-neutral-text leading-relaxed">Your doctor stays updated with your health history, 
+                    so each visit builds on the last.
+                  </p>
+                </div>
+              </div>
+              <div id="companion-benefit-6"
+                class="bg-white border border-neutral-border rounded-lg shadow-lg p-8 flex flex-col lg:flex-row gap-6">
+                <div class="flex-shrink-0 flex justify-center lg:justify-start">
+                  <div
+                    class="w-16 h-16 bg-deep-teal bg-opacity-10 rounded-full flex items-center justify-center">
+                    <i
+                      class="fa-solid fa-user-doctor text-2xl text-deep-teal"></i>
+                  </div>
+                </div>
+                <div>
+                  <h3 class="text-xl font-semibold text-midnight-ink mb-3">Find the right doctor for you</h3>
+                  <p class="text-neutral-text leading-relaxed">Know who to consult, and when to 
+                    seek the right care.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="designed-with-doctors" class="py-12 md:py-24 bg-teal-50">
+        <div class="container mx-auto px-8">
+          <div class="max-w-6xl mx-auto pb-12">
+            <h2
+              class="text-3xl md:text-4xl font-bold text-deep-teal tracking-tight mb-6">
+              Designed with doctors, for patients
+            </h2>
+            <div class="space-y-8">
+              <p class="text-lg text-neutral-text leading-relaxed">Keeping patients connected to the right care and guidance
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer id="footer" class="bg-footer-bg text-white">
+      <div class="container mx-auto px-8 py-16">
+        <div class="grid grid-cols-1 md:grid-cols-[1.3fr_1fr_1fr_1fr] gap-8">
+          <div>
+            <div class="mt-4">
+              <a href="index.html" class="flex items-center space-x-2"><span
+                  class="w-8 h-8 bg-white rounded-md flex items-center justify-center"><img src="assets/images/shared/Logo.svg" alt="MediLens logo" class="h-5 w-auto"></span><span class="text-2xl font-bold">MediLens</span></a>
+              <p class="mt-4 text-gray-400 text-sm whitespace-nowrap">Keeping Care Connected</p>
+            </div>
+          </div>
+          <div>
+            <ul class="mt-4 space-y-3">
+              <li><a href="for-clinics.html"
+                  class="text-gray-400 hover:text-white transition-colors">For
+                  Clinics</a></li>
+              <li><a href="for-patients.html"
+                  class="text-gray-400 hover:text-white transition-colors">For
+                  You</a></li>
+            </ul>
+          </div>
+          <div>
+            <ul class="mt-4 space-y-3">
+              <li><a href="about.html"
+                  class="text-gray-400 hover:text-white transition-colors">About
+                  Us</a></li>
+            </ul>
+          </div>
+          <div>
+            <ul class="mt-4 space-y-3">
+              <li><a href="contact.html"
+                  class="text-gray-400 hover:text-white transition-colors">Contact
+                  Us</a></li>
+            </ul>
+          </div>
+        </div>
+        <div
+          class="mt-16 border-t border-gray-600 pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-gray-400">
+          <p>© 2025 Medilens Technologies Private Limited. All rights reserved.
+          </p>
+          <div class="flex space-x-4 mt-4 md:mt-0"><a href="privacy.html"
+              class="hover:text-white transition-colors">Privacy Policy</a><a
+              href="terms.html" class="hover:text-white transition-colors">Terms of
+              Service</a></div>
+        </div>
+      </div>
+    </footer>
+  </body>
+
+</html>
