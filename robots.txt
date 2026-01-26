@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://medilenstech.com/sitemap.xml
